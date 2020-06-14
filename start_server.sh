@@ -1,0 +1,10 @@
+# CORS OPTIONS
+export ALLOW_CORS_ORIGIN=*
+export ALLOW_CORS_METHODS=OPTIONS,GET,POST,PUT,PATCH,DELETE
+
+#SERVER PORT 
+export PORT=3000
+
+
+#start server
+nodemon server.js
