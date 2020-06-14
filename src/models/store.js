@@ -1,7 +1,16 @@
 import mongoose, { mongo } from 'mongoose';
 
 const storeSchema = new mongoose.Schema({
-    cache:{}
+    key:{ 
+        type:String,
+        unique:true,
+        required:true
+    },
+    value:{
+        type:String,
+        required:true
+    },
+    ttl:Number
 },{
     timestamps:true,
     versionKey:false
